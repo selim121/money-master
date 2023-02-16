@@ -28,7 +28,7 @@
 
     <!-- main -->
     <main>
-        <div class="row px-6 align-items-center">
+        <div class="row g-4 px-6 align-items-center">
             <div class="col text-center">
                 <img class="w-95" src="images/money.jpeg" alt="">
             </div>
@@ -39,7 +39,7 @@
                         <label for="" class="col-form-label">Income:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="text" id="" class="form-control border-0 bg-body-secondary"
+                        <input type="text" id="total-income" class="form-control border-0 bg-body-secondary"
                             placeholder="Enter total income">
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         <label for="" class="col-form-label">Food:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="text" id="" class="form-control border-0 bg-body-secondary"
+                        <input type="text" id="food-cost" class="form-control border-0 bg-body-secondary"
                             placeholder="Enter amount">
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         <label for="" class="col-form-label">Rent:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="text" id="" class="form-control border-0 bg-body-secondary"
+                        <input type="text" id="rent-cost" class="form-control border-0 bg-body-secondary"
                             placeholder="Enter amount">
                     </div>
                 </div>
@@ -67,17 +67,17 @@
                         <label for="" class="col-form-label">Clothes:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="text" id="" class="form-control border-0 bg-body-secondary"
+                        <input type="text" id="clothes-cost" class="form-control border-0 bg-body-secondary"
                             placeholder="Enter amount">
                     </div>
                 </div>
 
                 <div class="text-center my-4">
-                    <button class="btn btn-primary opacity-75 px-5">Calculate</button>
+                    <button id="btn-calculate" class="btn btn-primary opacity-75 px-5">Calculate</button>
                 </div>
 
-                <p class="fw-semibold text-center mb-3">Total Expenses: <span>00</span></p>
-                <p class="fw-semibold text-center">Balance: <span>00</span></p>
+                <p class="fw-semibold text-center mb-3">Total Expenses: <span id="total-cost">00</span></p>
+                <p class="fw-semibold text-center">Balance: <span id="remaining-balance">00</span></p>
                 <div class="d-flex justify-content-between mx-4 align-items-center">
                     <label for="">Save:</label>
                     <input type="text" id="" class="py-2 rounded-2 border-0 bg-body-secondary">
@@ -97,6 +97,8 @@
 
     <!-- js style -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
